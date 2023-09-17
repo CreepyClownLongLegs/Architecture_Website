@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { ProjectCardComponent } from './projectComponents/project-card/project-card.component';
 import { ProjectsListComponent } from './projectComponents/projects-list/projects-list.component';
 import { ProjectSiteComponent } from './projectComponents/project-site/project-site.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectCardComponent,
     ProjectsListComponent,
-    ProjectSiteComponent
+    ProjectSiteComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -22,3 +27,4 @@ import { ProjectSiteComponent } from './projectComponents/project-site/project-s
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
