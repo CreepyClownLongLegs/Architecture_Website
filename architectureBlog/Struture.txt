@@ -1,0 +1,26 @@
+Components:
+
+Header 
+    Menu: About , Projects , Gallery , Logo (left corner), contact (right corner)
+
+Footer
+    Contacts links to footer
+    Email, instagram, Adress, link to the other pages, number, back to top
+
+The projets components
+    Project card componet 
+
+    Projects page list component
+
+    individual project site component
+
+The Gallery component
+
+The Main Page component
+
+
+
+
+
+
+
