@@ -8,7 +8,7 @@ import { ProjectsListComponent } from './projectComponents/projects-list/project
 import { ProjectSiteComponent } from './projectComponents/project-site/project-site.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,12 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsListComponent,
     ProjectSiteComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
