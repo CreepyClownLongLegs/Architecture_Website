@@ -1,1 +1,93 @@
-<p>footer works!</p>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container-fluid">
+<!-- some text no one will read-->
+
+  <div style="height: 40vh; font-family: 'Lora', serif; padding-top:20vh; color: aliceblue;" class="container">
+    <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="some texts col-lg-7">
+      <p style="letter-spacing: 2px;font-size: 300%;">LETS TALK ;)</p>
+      <p style="font-size: 90%;">
+        Call me, like, please, talking with another human is the only thing that keeps the voices away
+      </p>
+    </div>
+    <div class="col-lg-2">
+        <a href="#"><img class="cat-hover" width="100%" style="display: block; margin: auto;" src="..\assets\imgs\cat thumbs up.png" alt=""></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin: 10vw;margin-bottom: 8vh;">
+    <div class="col-lg-5" style="border-bottom: 1px solid white; margin-bottom: 6.5vh;"></div>
+    <div class="col-lg-2" >
+        <a href="#header"><img width="60%" style="display: block; margin: auto;" src="..\assets\imgs\logo.png" alt=""></a>
+    </div>
+    <div class="col-lg-5" style="border-bottom: 1px solid white; margin-bottom: 6.5vh;"></div>
+  </div>
+
+  <!-- some links for stuff ya know for contacts--> 
+
+  <div class="container" width="100vw;" >
+    <div class="row" style="text-decoration: none; font-family: 'Lora', serif; color: azure; padding-bottom: 10vh; ">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-1"><a class="hover-border" style="text-decoration: none; color: aliceblue;" href="#">About Sinja</a></div>
+        <div class="col-lg-1"><a class="hover-border" style="text-decoration: none; color: aliceblue;" href="#">Projects</a></div>
+        <div class="col-lg-1"><a class="hover-border" style="text-decoration: none; color: aliceblue;" href="#">Gallery</a></div> 
+        <div class="col-lg-2"><a class="hover-border" style="text-decoration: none; color: aliceblue;" href="#">MyStreet 69, Wien, Austria</a></div>
+        <div class="col-lg-2"><a class="hover-border" style="text-decoration: none; color: aliceblue;" href="#">(+43)MyNumber</a></div>
+        <div class="col-lg-1"><a class="cat-hover" style="text-decoration: none; color: aliceblue; font-size: 110%;" href="#" class="fa fa-instagram"></a></div>
+        <div class="col-lg-2"></div>
+      </div>
+  </div>
+
+</div>
+
+
+<style>
+    .container-fluid{
+        height: 100vh;
+        background-color:rosybrown;
+    }
+
+
+    .hover-border {
+  position: relative;
+}
+
+.hover-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Initial border height, adjust as needed */
+  background-color: #FFFFFF; /* Border color when active */
+  transform: scaleX(0); /* Initial scale to make it disappear */
+  transform-origin: right; /* Start scaling from the right */
+  transition: transform 0.3s, height 0.3s; /* Add transition effects */
+}
+
+.hover-border:hover::after {
+  transform: scaleX(1); /* When hovered, scale the border to its full width */
+  transform-origin: left; /* Start scaling from the left */
+  height: 1px; /* Border height when hovered, adjust as needed */
+}
+
+.cat-hover{
+    transition: transform 0.3s ease;
+}
+
+.cat-hover:hover{
+    transform: translateY(10px);
+}
+
+.instagram-hover{
+    transition: transform 0.3s ease;
+}
+
+.instagram-hover:hover{
+    transform: translateY(-8px);
+}
+</style>

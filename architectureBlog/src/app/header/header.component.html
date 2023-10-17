@@ -2,14 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 </style>
 
-<div class="container-fluid" style="background-color: #FFEEEE;  padding-left: 0px;padding-right:0px; border: 1px solid black; border-left: none; border-top: none; border-right:none;">
+<div class="container-fluid" [style.top]="headerVisible ? '0' : '-100px'" style="position:fixed;z-index:10;transition: top 0.3s; ;background-color: #FFEEEE;  padding-left: 0px;padding-right:0px; border: 1px solid black; border-left: none; border-top: none; border-right:none;">
 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin:0px; padding: 0px; position: sticky;background-color: #FFEEEE; font-family: 'Lora', serif">
     <div class="logo-holder container-fluid" style="background-color: #FFEEEE; padding: 0px; margin: 0px;"   >
 
       <div style="height: 13vh;border: 1px solid black; border-bottom:none;border-left:none;border-top: none;">  
-      <div style="margin-top: 4.2vh"> 
-      <a class="navbar-brand" style=" padding-left: 100px; padding-right: 100px;" href="#">Logo</a>
-      </div>
+      <a class="navbar-brand" style=" padding-left: 100px; padding-right: 100px;" href="#">
+        <img style="margin: 0px; padding: 0px;" height="95vh" src="..\assets\imgs\logo.png">
+      </a>
     </div>
 
       <!-- another -->
@@ -21,13 +21,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item" style="margin-right: 40px;">
-                <a class="nav-link active" href="#">ABOUT ME</a>
+              <li class="nav-item hover-border"
+               style="margin-right: 40px;">
+                <a class=" nav-link" href="#" >ABOUT ME</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hover-border">
                 <a class="nav-link" href="#">GALLERY</a>
               </li>
-              <li class="nav-item" style="margin-left: 40px;">
+              <li class="nav-item hover-border" style="margin-left: 40px;">
                 <a class="nav-link" href="#">PROJECTS</a>
               </li>
             </ul>
@@ -38,14 +39,16 @@
 
         <!--Contacts -->
 
-        <a class="logo-holder"
+        <a class="logo-holder" href="#footer"
         [style.background-color]="backgroundColor"
         [style.color]="fontColot"
         (mouseenter)="onMouseEnter()"
-        (mouseleave)="onMouseLeave()" style="text-decoration:none;height: 13vh;border: 1px solid black; border-bottom:none;border-right:none;border-top: none;">  
+        (mouseleave)="onMouseLeave()" style="text-decoration:none;height: 13vh;border: 1px solid black;border-right:none;border-top: none;">  
         
         <div style="margin-top: 4.2vh"> 
-        <div  style="padding-left: 100px; padding-right: 100px; font-size: 130%;" >Contact</div>
+        <div style="padding-left: 100px; padding-right: 100px; font-size: 130%;" >
+          <p >Contact</p>
+        </div>
         </div>
 
       </a>
@@ -55,4 +58,28 @@
 
 <style>
   .logo-holder{transition: background-color 0.3s ease;}
+
+  .hover-border {
+  position: relative;
+}
+
+.hover-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Initial border height, adjust as needed */
+  background-color: #000000; /* Border color when active */
+  transform: scaleX(0); /* Initial scale to make it disappear */
+  transform-origin: right; /* Start scaling from the right */
+  transition: transform 0.3s, height 0.3s; /* Add transition effects */
+}
+
+.hover-border:hover::after {
+  transform: scaleX(1); /* When hovered, scale the border to its full width */
+  transform-origin: left; /* Start scaling from the left */
+  height: 1px; /* Border height when hovered, adjust as needed */
+}
+
 </style>

@@ -10,17 +10,67 @@
   @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 </style>
 
-<app-header></app-header>
+<app-header id="header"></app-header>
 
-<div class="container-fluid" style="font-family: 'Lora', serif; background-color: #FFEEEE; width: 100%; height: 87vh;justify-content: center; display: flex;">
+<div class="container-fluid" style="font-family: 'Lora', serif; background-color: #FFEEEE; width: 100%; height: 100vh;justify-content: center; display: flex;">
   <div>
   <p style="margin-top: 40vh; font-size: 450%; letter-spacing: 20px; border-top: 1px solid black; border-image: linear-gradient(to right, #000 80%, transparent 20%) 100% 1;">
     SINJA TEKAVEC
   </p>
   <p style="font-size: 120%; letter-spacing: 5px;">
-    Enlighten your mind
+    Enlighten your mind 
   </p>
   </div>
 </div>
 
+<!-- random eastetic pictures-->
+<div id="image-container" class="row" style="height: 160vh;">
+  <div style="margin-left: 12vw; margin-top: 10vw;" class="col-lg-5">
+  <img  width="100%" data-lazy="assets/imgs/homophobic_dog.png">
+ </div>
+
+ <div style="margin-left: 5vw; margin-top: 15vw;" class="col-lg-4">
+  <img  width="100%" data-lazy="assets/imgs/slendy.jpg">
+ </div>
+
+ <div style="margin-left: 9vw; margin-top: -15vw;" class="col-lg-4">
+  <img  width="100%" height="80%" data-lazy="assets/imgs/jesus-thumbs-up21.jpg">
+ </div>
+</div>
+
+<!-- some text no one will read-->
+
+<div style="height: 50vh; font-family: 'Lora', serif" class="container">
+  <div class="row">
+  <div class="col-lg-1"></div>
+  <div class="some texts col-lg-7">
+    <p style="letter-spacing: 2px;font-size: 300%;">OPEN YOUR MIND</p>
+    <p style="font-size: 90%;">Lorem ipsum dolorem, have you even like  actually sat there and thought about your life for a good bit till
+      you realise that you actually have no clue why ure even doing all the things ure doing, the your mom calls you to tell 
+      you that ur an awful human being till one day it will be enough and you finally decide to seek eternal rest...
+    </p>
+  </div>
+  </div>
+</div>
+
+<app-footer id="footer"></app-footer>
+
 <router-outlet></router-outlet>
+
+<style>
+
+img{
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 1s;
+}
+
+.fade{
+  transform: translateY(0);
+  opacity: 1.0;
+  transition: all 1s;
+}
+
+</style>
