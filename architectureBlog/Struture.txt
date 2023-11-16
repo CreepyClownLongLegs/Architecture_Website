@@ -1,11 +1,11 @@
 Components:
 
 Header 
-    Menu: About , Projects , Gallery , Logo (left corner), contact (right corner)
+    Menu: About , Projects , Gallery , Logo (left corner), contact (right corner) -- laptop v. done
 
 Footer
     Contacts links to footer
-    Email, instagram, Adress, link to the other pages, number, back to top
+    Email, instagram, Adress, link to the other pages, number, back to top  -- laptop v. done
 
 The projets components
     Project card componet 
@@ -16,7 +16,9 @@ The projets components
 
 The Gallery component
 
-The Main Page component
+The Main Page component  -- laptop v. done
+
+About Sinja
 
 
 

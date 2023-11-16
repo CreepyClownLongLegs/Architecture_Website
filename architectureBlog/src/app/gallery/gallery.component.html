@@ -1,10 +1,53 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+</head>
+
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-  </style>
-  
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+</style>
+
+
   <app-header id="header"></app-header>
   
   <!-- some sort of introduction of SInja ig idk-->
+
+  <!-- the actual gallery imagine-->
+
+      <div class="photo-gallery">
+          <div class="container-fluid">
+              <div class="intro" style="height: 50vh;">
+                  <p class="h2">MY<br> STUFFS</p>
+                  <p >Wooohhh i am so great yeaaaahhhhhh,look at all my cool stuff aha all did by meee whopdiedoo yeehaaww Im so cool so Ill say it another 10 times,
+                    Wooohhh i am so great yeaaaahhhhhh,actually nah its enuff...
+                  </p>
+              </div>
+              <div class="row photos">
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../../assets/imgs/raccoon.jpg" data-lightbox="photos"><img class="img-fluid" src="../../assets/imgs/raccoon.jpg"></a></div>
+              </div>
+          </div>
+      </div>
 
     <!-- some text no one will read-->
   
@@ -31,7 +74,7 @@
   img{
     position: relative;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(50%);
     transition: all 1s;
   }
@@ -41,5 +84,48 @@
     opacity: 1.0;
     transition: all 1s;
   }
+
+  .photo-gallery {
+  color:#313437;
+  background-color:#fff;
+}
+
+.photo-gallery p {
+  color:#7d8285;
+  font-family: 'Lora';
+  font-size: 90%;
+}
+
+.photo-gallery p.h2 {
+  color: black;
+  font-size: 500%;
+  font-weight: 100;
+  letter-spacing: 10px;
+  padding-top:30vh;
+  color:inherit;
+  font-family: 'Lora';
+}
+
+@media (max-width:767px) {
+  .photo-gallery.h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  max-width:60vw;
+  margin-left:15vw;
+}
+
+
+.photo-gallery .photos {
+  padding-bottom:10px;
+}
+
+.photo-gallery .item {
+  padding-bottom:10px;
+}
   
   </style>
