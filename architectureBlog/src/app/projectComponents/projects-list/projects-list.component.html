@@ -1,1 +1,162 @@
-<p>projects-list works!</p>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+  </style>
+  
+  <app-header id="header"></app-header>
+
+    <!-- some sort of introduction of SInja ig idk-->
+    <div class="container">
+    <div class="intro mx-5" style="height: 50vh;">
+        <p class="mx-5" style="color:darkslategrey;margin-top: 20vh; font-size: 450%; letter-spacing: 20px; font-family: 'Lora';">
+          MY <br> STUFFZ
+        </p>
+          <p class="col-lg-6 mx-5" >Wooohhh i am so great yeaaaahhhhhh,look at all my cool stuff aha all did by meee whopdiedoo yeehaaww Im so cool so Ill say it another 10 times,
+            Wooohhh i am so great yeaaaahhhhhh,actually nah its enuff...
+          </p>
+      </div>
+    </div>
+
+    <!--like i guess all the projects shes done idk -->
+
+    <!-- Second Row [Team]-->
+  <div class="row pb-5 mx-5">
+
+    <div class="col-lg-6 col-md-12 mb-lg-0">
+      <!-- Card-->
+      <a href="/project-site" style="text-decoration: none;">
+        <div class="card border-0" style="border-radius: 0px; text-decoration: none;">
+          <div class="card-body p-0">
+      
+            <!-- app.component.html -->
+            <div *ngFor="let image of images" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)">
+              <img [src]="image.url" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)" class="w-100" [class.zoomed]="image.isZoomed" />
+            </div>
+      
+            <div class="p-4" style="text-decoration: none;">
+              <h5 style="text-decoration: none;" class="mb-0">Very Important Project</h5>
+              <p style="text-decoration: none;" class="small text-muted">So Amazing Wow</p>
+            </div>
+      
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mb-lg-0">
+      <!-- Card-->
+      <a href="/project-site" style="text-decoration: none;">
+        <div class="card border-0" style="border-radius: 0px; text-decoration: none;">
+          <div class="card-body p-0">
+      
+            <!-- app.component.html -->
+            <div *ngFor="let image of images" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)">
+              <img [src]="image.url" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)" class="w-100" [class.zoomed]="image.isZoomed" />
+            </div>
+      
+            <div class="p-4" style="text-decoration: none;">
+              <h5 style="text-decoration: none;" class="mb-0">Very Important Project</h5>
+              <p style="text-decoration: none;" class="small text-muted">So Amazing Wow</p>
+            </div>
+      
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mb-lg-0">
+      <!-- Card-->
+      <a href="/project-site" style="text-decoration: none;">
+        <div class="card border-0" style="border-radius: 0px; text-decoration: none;">
+          <div class="card-body p-0">
+      
+            <!-- app.component.html -->
+            <div *ngFor="let image of images" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)">
+              <img [src]="image.url" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)" class="w-100" [class.zoomed]="image.isZoomed" />
+            </div>
+      
+            <div class="p-4" style="text-decoration: none;">
+              <h5 style="text-decoration: none;" class="mb-0">Very Important Project</h5>
+              <p style="text-decoration: none;" class="small text-muted">So Amazing Wow</p>
+            </div>
+      
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mb-lg-0">
+      <!-- Card-->
+      <a href="/project-site" style="text-decoration: none;">
+        <div class="card border-0" style="border-radius: 0px; text-decoration: none;">
+          <div class="card-body p-0">
+      
+            <!-- app.component.html -->
+            <div *ngFor="let image of images" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)">
+              <img [src]="image.url" (mouseover)="onMouseOver(image)" (mouseout)="onMouseOut(image)" class="w-100" [class.zoomed]="image.isZoomed" />
+            </div>
+      
+            <div class="p-4" style="text-decoration: none;">
+              <h5 style="text-decoration: none;" class="mb-0">Very Important Project</h5>
+              <p style="text-decoration: none;" class="small text-muted">So Amazing Wow</p>
+            </div>
+      
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  
+
+      <!-- some text no one will read-->
+  
+      <div style="height: 40vh; font-family: 'Lora', serif; margin-top: 10vh;" class="container">
+        <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="some texts col-lg-7">
+          <p style="letter-spacing: 2px;font-size: 300%;">OPEN YOUR MIND</p>
+          <p style="font-size: 90%;">Lorem ipsum dolorem, have you even like  actually sat there and thought about your life for a good bit till
+            you realise that you actually have no clue why ure even doing all the things ure doing, the your mom calls you to tell 
+            you that ur an awful human being till one day it will be enough and you finally decide to seek eternal rest...
+          </p>
+        </div>
+        </div>
+      </div>
+  
+  
+  <!-- footer wow -->
+  
+  <app-footer id="footer"></app-footer>
+  
+  <style>
+  
+  /* app.component.css */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+img.zoomed {
+  transform: scale(1.2); /* Adjust the scale factor for desired zoom level */
+}
+
+  
+  .fade{
+    transform: translateY(0);
+    opacity: 1.0;
+    transition: all 1s;
+  }
+  
+  </style>
